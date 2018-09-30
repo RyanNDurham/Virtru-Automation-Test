@@ -212,7 +212,7 @@ public class AutomationTools {
         driver.findElement(By.xpath("//a[text() = 'Login With']")).click();
 
         // thread sleep for the encrypted email to load
-        Sleep(2000);
+        Sleep(4000);
 
         // Return the body of the email sent to assert if the email body is the same
         return driver.findElement(By.xpath("//span[@id = 'tdf-body']/div")).getText();
